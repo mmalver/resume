@@ -46,7 +46,7 @@
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), 
- .accordion_active .accordion_active:hover {
+ .accordion_active  {
     background-color: #ccc;
 }
 
