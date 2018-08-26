@@ -1,4 +1,4 @@
-var selectedSection; // selected section for the menul
+var selectedSection = ""; // selected section for the menul
 
 // event listeners
 function menuEventListener() {
@@ -43,10 +43,11 @@ function accordionEventListener()
 // set up the menu for first time use.
 function setupMenu() {
 	// define the section that gets displayed by default.
-	if (selectedSection == null)
+    
+    if (selectedSection == "")
 		selectedSection = "general";
-	document.getElementById(selectedSection).className = document.getElementById				(selectedSection).className + " active";
-	document.getElementById(selectedSection).setAttribute("aria-selected","true");
+    document.getElementById(selectedSection).className = document.getElementById(selectedSection).className + " active";
+    document.getElementById(selectedSection).setAttribute("aria-selected","true");
 	var selectedSectionName = selectedSection + "_panel";
 	document.getElementById(selectedSectionName).style.display="block";
 	// set up  event listeners, define buttons as tab for screen readers, and remove active status from the tab selection buttons.
