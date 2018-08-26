@@ -45,7 +45,7 @@ function setupMenu() {
 	// define the section that gets displayed by default.
 	if (selectedSection == null)
 		selectedSection = "general";
-	document.getElementById(selectedSection).className += " active";
+	document.getElementById(selectedSection).className = document.getElementById				(selectedSection).className + " active";
 	document.getElementById(selectedSection).setAttribute("aria-selected","true");
 	var selectedSectionName = selectedSection + "_panel";
 	document.getElementById(selectedSectionName).style.display="block";
